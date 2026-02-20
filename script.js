@@ -1,13 +1,13 @@
 // ================ إعدادات Firebase ================
 // استبدل هذا بالمعلومات الخاصة بك من Firebase
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDbUUnQUX5WuiVDqgDeL5iqDKmdpQd9U14",
+  authDomain: "dream-bank-88691.firebaseapp.com",
+  databaseURL: "https://dream-bank-88691-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "dream-bank-88691",
+  storageBucket: "dream-bank-88691.firebasestorage.app",
+  messagingSenderId: "378619838754",
+  appId: "1:378619838754:web:2f3646bff096bbf05f657b"
 };
 
 // تهيئة Firebase
