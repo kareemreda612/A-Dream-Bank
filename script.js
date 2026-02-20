@@ -1,18 +1,23 @@
-// ================ إعدادات Firebase ================
-// استبدل هذا بالمعلومات الخاصة بك من Firebase
+// ================ إعدادات Firebase مع Analytics ================
 const firebaseConfig = {
-  apiKey: "AIzaSyDbUUnQUX5WuiVDqgDeL5iqDKmdpQd9U14",
-  authDomain: "dream-bank-88691.firebaseapp.com",
-  databaseURL: "https://dream-bank-88691-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "dream-bank-88691",
-  storageBucket: "dream-bank-88691.firebasestorage.app",
-  messagingSenderId: "378619838754",
-  appId: "1:378619838754:web:2f3646bff096bbf05f657b"
+  apiKey: "AIzaSyDX_0F5dMZVp548piOKtko056NDf28UhVc",
+  authDomain: "dream-bank-2ed13.firebaseapp.com",
+  databaseURL: "https://dream-bank-2ed13-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "dream-bank-2ed13",
+  storageBucket: "dream-bank-2ed13.firebasestorage.app",
+  messagingSenderId: "15273062983",
+  appId: "1:15273062983:web:4686593dc46bda7907b762",
+  measurementId: "G-3JGCVJKM2J"
 };
 
 // تهيئة Firebase
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
+
+// تهيئة Analytics (اختياري)
+const analytics = firebase.analytics();
+
+// باقي الكود كما هو...
 
 // ================ متغيرات عامة ================
 let currentUser = null;
