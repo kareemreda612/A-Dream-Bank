@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك الأحلام | الرئيسية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-cloud-moon"></i>
+                <span>بنك الأحلام</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="submit.html">سجل حلمك</a>
+                <a href="explore.html">استكشف</a>
+                <div class="user-menu" id="userMenu">
+                    <a href="login.html">دخول</a>
+                    <a href="register.html">تسجيل</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    <span>أحلامك</span> ليست مجرد خيال،<br>إنها <span>ثروة</span> تنتظر من يكتشفها
+                </h1>
+                <p>منصة الأحلام الأولى في العالم العربي. سجل أحلامك، استكشف أحلام الآخرين، وحول خيالك إلى واقع.</p>
+                <div>
+                    <a href="submit.html" class="btn btn-primary"><i class="fas fa-pen"></i> سجل حلمك الآن</a>
+                    <a href="explore.html" class="btn btn-secondary"><i class="fas fa-compass"></i> استكشف الأحلام</a>
+                </div>
+                <div class="stats-container" id="statsContainer">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalDreams">0</div>
+                        <div class="stat-label">حلم مسجل</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalUsers">0</div>
+                        <div class="stat-label">حالم</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="todayDreams">0</div>
+                        <div class="stat-label">حلم اليوم</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalLikes">0</div>
+                        <div class="stat-label">إعجاب</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
