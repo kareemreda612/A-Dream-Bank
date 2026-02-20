@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استكشف الأحلام | بنك الأحلام</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-cloud-moon"></i>
+                <span>بنك الأحلام</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">الرئيسية</a>
+                <a href="submit.html">سجل حلمك</a>
+                <a href="explore.html">استكشف</a>
+                <div class="user-menu" id="userMenu">
+                    <a href="login.html">دخول</a>
+                    <a href="register.html">تسجيل</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 30px;">استكشف أحلام الآخرين</h1>
+            <div class="dreams-grid" id="dreamsGrid">
+                <!-- الأحلام ستظهر هنا -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
