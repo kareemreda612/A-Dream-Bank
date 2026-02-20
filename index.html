@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بنك الأحلام | منصة الأحلام العالمية</title>
-    <meta name="description" content="منصة بنك الأحلام: سجل أحلامك، شاركها مع المجتمع، واكتشف أحلام الآخرين. أول منصة عربية لتوثيق الأحلام.">
-    <meta name="keywords" content="أحلام, تفسير أحلام, تسجيل أحلام, مشاركة أحلام, منصة أحلام">
+    <title>بنك الأحلام | منصة الأحلام العربية الأولى</title>
+    <meta name="description" content="بنك الأحلام: منصة عربية لتسجيل ومشاركة الأحلام. سجل أحلامك، استكشف أحلام الآخرين، واكتشف عوالم جديدة.">
+    <meta name="keywords" content="أحلام, تفسير أحلام, تسجيل أحلام, مشاركة أحلام, مجتمع أحلام, منصة أحلام">
     
-    <!-- Font Awesome -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- الهيدر المتحرك -->
     <header id="mainHeader">
         <div class="header-container">
             <div class="logo">
@@ -24,7 +25,7 @@
                 <span>بنك الأحلام</span>
             </div>
             <nav class="nav">
-                <a href="index.html">الرئيسية</a>
+                <a href="index.html" class="active">الرئيسية</a>
                 <a href="submit.html">سجل حلمك</a>
                 <a href="explore.html">استكشف</a>
                 <div class="user-menu" id="userMenu">
@@ -35,6 +36,7 @@
         </div>
     </header>
 
+    <!-- المحتوى الرئيسي -->
     <div class="main-content">
         <section class="hero">
             <div class="hero-content">
@@ -42,10 +44,12 @@
                     <span>أحلامك</span> ليست مجرد خيال،<br>إنها <span>ثروة</span> تنتظر من يكتشفها
                 </h1>
                 <p>منصة الأحلام الأولى في العالم العربي. سجل أحلامك، استكشف أحلام الآخرين، وحول خيالك إلى واقع ملموس.</p>
-                <div>
+                <div class="hero-buttons">
                     <a href="submit.html" class="btn btn-primary"><i class="fas fa-pen"></i> سجل حلمك الآن</a>
                     <a href="explore.html" class="btn btn-secondary"><i class="fas fa-compass"></i> استكشف الأحلام</a>
                 </div>
+                
+                <!-- إحصائيات الموقع -->
                 <div class="stats-container" id="statsContainer">
                     <div class="stat-item">
                         <div class="stat-number" id="totalDreams">0</div>
@@ -68,16 +72,17 @@
         </section>
     </div>
 
+    <!-- الفوتر -->
     <footer>
         <div class="footer-content">
             <div class="footer-col">
                 <h3>عن بنك الأحلام</h3>
-                <p>منصة عربية رائدة تهدف إلى توثيق وتحليل الأحلام، وخلق مجتمع تفاعلي لمشاركة الأحلام والأفكار.</p>
+                <p>منصة عربية رائدة تهدف إلى توثيق وتحليل الأحلام، وخلق مجتمع تفاعلي لمشاركة الأحلام والأفكار والإلهام.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="تيك توك"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -101,11 +106,13 @@
         </div>
     </footer>
 
-    <button class="scroll-top" id="scrollTop">
+    <!-- مؤشر التمرير (يضاف بواسطة JavaScript) -->
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top" id="scrollTop" aria-label="العودة للأعلى">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Firebase SDK -->
+    <!-- Firebase SDK (الإصدار 9) -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
