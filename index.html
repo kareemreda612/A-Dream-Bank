@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بنك الأحلام | الرئيسية</title>
+    <title>بنك الأحلام | منصة الأحلام العالمية</title>
+    <meta name="description" content="منصة بنك الأحلام: سجل أحلامك، شاركها مع المجتمع، واكتشف أحلام الآخرين. أول منصة عربية لتوثيق الأحلام.">
+    <meta name="keywords" content="أحلام, تفسير أحلام, تسجيل أحلام, مشاركة أحلام, منصة أحلام">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="mainHeader">
         <div class="header-container">
             <div class="logo">
                 <i class="fas fa-cloud-moon"></i>
@@ -33,7 +41,7 @@
                 <h1>
                     <span>أحلامك</span> ليست مجرد خيال،<br>إنها <span>ثروة</span> تنتظر من يكتشفها
                 </h1>
-                <p>منصة الأحلام الأولى في العالم العربي. سجل أحلامك، استكشف أحلام الآخرين، وحول خيالك إلى واقع.</p>
+                <p>منصة الأحلام الأولى في العالم العربي. سجل أحلامك، استكشف أحلام الآخرين، وحول خيالك إلى واقع ملموس.</p>
                 <div>
                     <a href="submit.html" class="btn btn-primary"><i class="fas fa-pen"></i> سجل حلمك الآن</a>
                     <a href="explore.html" class="btn btn-secondary"><i class="fas fa-compass"></i> استكشف الأحلام</a>
@@ -60,8 +68,49 @@
         </section>
     </div>
 
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>عن بنك الأحلام</h3>
+                <p>منصة عربية رائدة تهدف إلى توثيق وتحليل الأحلام، وخلق مجتمع تفاعلي لمشاركة الأحلام والأفكار.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <p><a href="index.html">الرئيسية</a></p>
+                <p><a href="submit.html">سجل حلمك</a></p>
+                <p><a href="explore.html">استكشف الأحلام</a></p>
+                <p><a href="login.html">تسجيل الدخول</a></p>
+                <p><a href="register.html">حساب جديد</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>إحصائيات الموقع</h3>
+                <p><i class="fas fa-dream"></i> إجمالي الأحلام: <span id="footerDreams">0</span></p>
+                <p><i class="fas fa-users"></i> إجمالي المستخدمين: <span id="footerUsers">0</span></p>
+                <p><i class="fas fa-heart"></i> إجمالي الإعجابات: <span id="footerLikes">0</span></p>
+                <p><i class="fas fa-calendar"></i> تأسس في: 2025</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 بنك الأحلام - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js"></script>
+    
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
+</body>
+</html>
