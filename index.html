@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك الأحلام | المنصة العربية الأولى للأحلام</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="بنك الأحلام: منصة عربية لتسجيل ومشاركة الأحلام مع المجتمع. سجل أحلامك الآن">
+    <meta name="keywords" content="أحلام, تفسير أحلام, تسجيل أحلام">
+    <meta name="author" content="Dream Bank">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Loading Bar -->
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <!-- Header -->
+    <header id="mainHeader">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-cloud-moon"></i>
+                <span>بنك الأحلام</span>
+            </div>
+            
+            <nav class="nav desktop-nav">
+                <a href="index.html" class="active">الرئيسية</a>
+                <a href="pages/submit.html">سجل حلمك</a>
+                <a href="pages/explore.html">استكشف</a>
+                
+                <div class="user-menu" id="userMenu">
+                    <a href="pages/login.html" class="btn btn-outline">دخول</a>
+                    <a href="pages/register.html" class="btn btn-primary">تسجيل</a>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-cloud-moon"></i>
+                <span>بنك الأحلام</span>
+            </div>
+            <button class="close-sidebar" id="closeSidebar">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="index.html" class="active">الرئيسية</a>
+            <a href="pages/submit.html">سجل حلمك</a>
+            <a href="pages/explore.html">استكشف</a>
+            <div class="sidebar-user" id="sidebarUser">
+                <a href="pages/login.html" class="btn btn-outline">دخول</a>
+                <a href="pages/register.html" class="btn btn-primary">تسجيل</a>
+            </div>
+        </nav>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="أحلامك... ثروتك">
+                    <span class="gradient-text">أحلامك</span> ليست مجرد خيال<br>
+                    إنها <span class="gradient-text">ثروة</span> تنتظر من يكتشفها
+                </h1>
+                
+                <p class="hero-description">
+                    المنصة العربية الأولى لتسجيل ومشاركة الأحلام. 
+                    سجل أحلامك، شاركها مع المجتمع، واكتشف عوالم جديدة.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="pages/submit.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-pen"></i> سجل حلمك الآن
+                    </a>
+                    <a href="pages/explore.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-compass"></i> استكشف الأحلام
+                    </a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="stats-grid" id="statsContainer">
+                    <div class="stat-card">
+                        <div class="stat-number" data-stat="dreams">0</div>
+                        <div class="stat-label">حلم مسجل</div>
+                        <div class="stat-trend positive">+12%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-stat="users">0</div>
+                        <div class="stat-label">حالم</div>
+                        <div class="stat-trend positive">+8%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-stat="today">0</div>
+                        <div class="stat-label">حلم اليوم</div>
+                        <div class="stat-trend positive">+5%</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-stat="likes">0</div>
+                        <div class="stat-label">إعجاب</div>
+                        <div class="stat-trend positive">+21%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">لماذا <span class="gradient-text">بنك الأحلام</span>؟</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>ذكاء اصطناعي</h3>
+                        <p>تحليل أحلامك واكتشاف الأنماط المتكررة والرموز الخفية</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>خصوصية تامة</h3>
+                        <p>تحكم كامل بخصوصية أحلامك - اختر من يرى أحلامك</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>مجتمع عالمي</h3>
+                        <p>انضم لآلاف الحالمين من جميع أنحاء العالم العربي</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>إحصائيات متقدمة</h3>
+                        <p>تحليلات دقيقة لأحلامك وأحلام المجتمع</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Dreams -->
+        <section class="recent-dreams">
+            <div class="container">
+                <h2 class="section-title">أحدث <span class="gradient-text">الأحلام</span></h2>
+                
+                <div class="dreams-grid" id="recentDreams">
+                    <!-- سيتم تحميل الأحلام هنا -->
+                </div>
+                
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="pages/explore.html" class="btn btn-outline">
+                        عرض المزيد <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>ابدأ رحلة أحلامك اليوم</h2>
+                    <p>انضم إلى آلاف المستخدمين الذين يوثقون أحلامهم يومياً</p>
+                    <a href="pages/register.html" class="btn btn-primary btn-large">
+                        أنشئ حسابك مجاناً <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-cloud-moon"></i>
+                        <span>بنك الأحلام</span>
+                    </div>
+                    <p>منصة الأحلام الأولى في العالم العربي. حيث يلتقي العقل الباطن بالتكنولوجيا.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="pages/submit.html">سجل حلمك</a></li>
+                        <li><a href="pages/explore.html">استكشف الأحلام</a></li>
+                        <li><a href="pages/login.html">تسجيل الدخول</a></li>
+                        <li><a href="pages/register.html">حساب جديد</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>الدعم</h3>
+                    <ul>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>إحصائيات حية</h3>
+                    <div class="footer-stats">
+                        <p><i class="fas fa-dream"></i> إجمالي الأحلام: <span data-stat="dreams">0</span></p>
+                        <p><i class="fas fa-users"></i> إجمالي المستخدمين: <span data-stat="users">0</span></p>
+                        <p><i class="fas fa-heart"></i> إجمالي الإعجابات: <span data-stat="likes">0</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 بنك الأحلام - جميع الحقوق محفوظة. صنع في مصر 🇪🇬</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
