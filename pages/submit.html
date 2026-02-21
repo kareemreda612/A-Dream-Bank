@@ -1,198 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سجل حلمك | بنك الأحلام</title>
-    
-    <!-- SEO -->
-    <meta name="description" content="سجل حلمك في بنك الأحلام وشاركه مع المجتمع. احتفظ بأحلامك للأبد.">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-    <!-- شريط التحميل العلوي -->
-    <div class="loading-bar" id="loadingBar"></div>
-
-    <!-- الهيدر المتحرك -->
-    <header id="mainHeader">
-        <div class="container header-container">
-            <div class="logo">
-                <i class="fas fa-cloud-moon"></i>
-                <span>بنك الأحلام</span>
-            </div>
-            
-            <nav class="nav">
-                <a href="/">الرئيسية</a>
-                <a href="/pages/submit.html" class="active">سجل حلمك</a>
-                <a href="/pages/explore.html">استكشف</a>
-                
-                <div class="user-menu" id="userMenu">
-                    <a href="/pages/login.html" class="btn btn-outline">دخول</a>
-                    <a href="/pages/register.html" class="btn btn-primary">تسجيل</a>
-                </div>
-            </nav>
-            
-            <!-- زر القائمة للجوال -->
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- القائمة الجانبية للجوال -->
-    <div class="mobile-sidebar" id="mobileSidebar">
-        <div class="sidebar-header">
-            <div class="logo">
-                <i class="fas fa-cloud-moon"></i>
-                <span>بنك الأحلام</span>
-            </div>
-            <button class="close-sidebar" id="closeSidebar">&times;</button>
-        </div>
-        <nav class="sidebar-nav">
-            <a href="/">الرئيسية</a>
-            <a href="/pages/submit.html">سجل حلمك</a>
-            <a href="/pages/explore.html">استكشف</a>
-            <div class="sidebar-user" id="sidebarUser">
-                <a href="/pages/login.html" class="btn btn-outline">دخول</a>
-                <a href="/pages/register.html" class="btn btn-primary">تسجيل</a>
-            </div>
-        </nav>
-    </div>
-    <div class="overlay" id="overlay"></div>
-
-    <!-- المحتوى الرئيسي -->
-    <main>
-        <div class="form-container">
-            <h1>
-                <i class="fas fa-pen" style="color: var(--primary-500); margin-left: 1rem;"></i>
-                سجل حلمك
-            </h1>
-            
-            <div class="info-message">
-                <i class="fas fa-info-circle"></i>
-                <div>
-                    <strong>كل حلم تشاركه قد يكون:</strong>
-                    <ul style="margin-top: 0.5rem; margin-right: 1.5rem;">
-                        <li>فكرة لمشروع ناجح</li>
-                        <li>قصة لفيلم أو رواية</li>
-                        <li>إلهام لشخص آخر</li>
-                        <li>ذكرى جميلة تحتفظ بها</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <form id="dreamForm">
-                <div class="form-group">
-                    <label for="dreamTitle">عنوان الحلم (اختياري)</label>
-                    <input type="text" id="dreamTitle" placeholder="مثال: حلمت أني أطير في السماء">
-                </div>
-                
-                <div class="form-group">
-                    <label for="dreamText">تفاصيل الحلم <span style="color: var(--danger);">*</span></label>
-                    <textarea id="dreamText" placeholder="اكتب كل تفاصيل حلمك... من أين بدأ؟ ماذا رأيت؟ كيف شعرت؟" required></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="dreamTags">كلمات مفتاحية (افصل بينها بفواصل)</label>
-                    <input type="text" id="dreamTags" placeholder="طيران, سماء, سعادة">
-                </div>
-                
-                <div class="form-group">
-                    <label>مشاعرك في الحلم</label>
-                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <label class="checkbox-group">
-                            <input type="checkbox" name="emotion" value="سعادة"> 😊 سعادة
-                        </label>
-                        <label class="checkbox-group">
-                            <input type="checkbox" name="emotion" value="خوف"> 😨 خوف
-                        </label>
-                        <label class="checkbox-group">
-                            <input type="checkbox" name="emotion" value="دهشة"> 😲 دهشة
-                        </label>
-                        <label class="checkbox-group">
-                            <input type="checkbox" name="emotion" value="حزن"> 😢 حزن
-                        </label>
-                        <label class="checkbox-group">
-                            <input type="checkbox" name="emotion" value="حب"> ❤️ حب
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="isPublic" checked>
-                    <label for="isPublic">أوافق على مشاركة حلمي علناً مع المجتمع</label>
-                </div>
-                
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="allowComments" checked>
-                    <label for="allowComments">السماح بالتعليقات على حلمي</label>
-                </div>
-                
-                <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.2rem; padding: 1rem;">
-                    <i class="fas fa-save"></i> حفظ الحلم
-                </button>
-            </form>
-            
-            <div class="form-footer">
-                <p>جميع أحلامك محفوظة بخصوصية تامة. يمكنك تعديل إعدادات الخصوصية في أي وقت.</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- الفوتر -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <i class="fas fa-cloud-moon"></i>
-                        <span>بنك الأحلام</span>
-                    </div>
-                    <p>منصة الأحلام الأولى في العالم العربي.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>روابط سريعة</h3>
-                    <ul>
-                        <li><a href="/">الرئيسية</a></li>
-                        <li><a href="/pages/submit.html">سجل حلمك</a></li>
-                        <li><a href="/pages/explore.html">استكشف</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>إحصائيات</h3>
-                    <div class="footer-stats">
-                        <p><i class="fas fa-dream"></i> أحلام: <span data-stat="dreams">0</span></p>
-                        <p><i class="fas fa-users"></i> مستخدمين: <span data-stat="users">0</span></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2025 بنك الأحلام</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
-    
-    <!-- Main JavaScript -->
-    <script src="../assets/js/script.js"></script>
-</body>
-</html>
